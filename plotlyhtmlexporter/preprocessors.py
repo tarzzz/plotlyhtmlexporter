@@ -16,6 +16,7 @@ class PlotlySanitizeHTML(SanitizeHTML):
 
         """
         outputs = super(PlotlySanitizeHTML, self).sanitize_code_outputs(outputs)
+
         # Do extra processing for 'text/vnd.plotly.v1+html'
         for output in outputs:
             if output['output_type'] in ('stream', 'error'):
