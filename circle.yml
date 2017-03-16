@@ -1,0 +1,9 @@
+
+dependencies:
+  override:
+    - pip install -r requirements.txt
+    - pip install nosetests
+
+test:
+  override:
+    - cd plotlyhtmlexporter/tests && nosetests -vv && cd ../../;
