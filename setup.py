@@ -32,4 +32,10 @@ setup(name='plotlyhtmlexporter',
       packages=['plotlyhtmlexporter', ],
       install_requires=['nbconvert>=5.1.1',
                         'traitlets>=4.3.2'],
-      zip_safe=False)
+      zip_safe=False,
+      entry_points={
+          'nbconvert.exporters': [
+            'plotlyhtml = plotlyhtmlexporter:PlotlyHTMLExporter',
+          ],
+      },
+      )
