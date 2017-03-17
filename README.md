@@ -26,6 +26,13 @@ $ pip install plotlyhtmlexporter
 $ jupyter nbconvert --to plotlyhtml mynotebook.ipynb
 ```
 
+or:
+
+```
+$ jupyter nbconvert --to plotlyhtmlexporter.PlotlyHTMLExporter mynotebook.ipynb
+```
+
+
   - From the Python interpreter:
 
 ```
